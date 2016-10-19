@@ -12,8 +12,6 @@ index = {
 
 i=0
 for page in page_content:
-    print page_content[page]
-
     title = content.replace("{title}", page_content[page]['title'])
     heading = title.replace("{heading}", page_content[page]['heading'])
     body = heading.replace("{body}", page_content[page]['body'])
