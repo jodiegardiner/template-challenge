@@ -4,12 +4,6 @@ template = open('template.html', 'r')
 content = template.read()
 template.close()
 
-index = {
-    'title': 'Cool Page Title',
-    'heading': 'Cool Heading',
-    'body': 'What a cool body this is!'
-}
-
 i=0
 for page in page_content:
     title = content.replace("{title}", page_content[page]['title'])
